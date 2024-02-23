@@ -1,10 +1,13 @@
 .hljs {
-  .hljs-keyword {
+  .hljs-keyword, .hljs-literal {
     color: rgb(247, 108, 171);
   }
 
   .hljs-title.class_, .hljs-title.function_ {
     color: rgb(100, 217, 255);
+  }
+  .hljs-built_in {
+
   }
 
   .hljs-meta, .hljs-type {
@@ -13,6 +16,10 @@
 
   .hljs-operator {
     color: white;
+  }
+
+  .hljs-string {
+    color: rgb(238, 144, 127);
   }
 
   color: white;

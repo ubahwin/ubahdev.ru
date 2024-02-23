@@ -54,6 +54,18 @@ article {
     }
 
     code {
+      &::-webkit-scrollbar {
+        width: 20px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: lighten(rgb(23, 23, 27), 40);
+        border: 5px solid transparent;
+        border-radius: 8px;
+        background-clip: padding-box;
+      }
+
+
       font-size: 16px;
 
       font-family: 'JetBrains Mono', monospace;
