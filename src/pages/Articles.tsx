@@ -1,8 +1,7 @@
-import '@styles/Articles.scss'
 import React, {useEffect, useState} from 'react'
 import axios from 'axios'
-import {Link} from 'react-router-dom'
 import ArticleCell from '@components/ArticleCell.tsx'
+import '@styles/Articles.scss'
 
 const Articles = () => {
   const [articles, setArticles] = useState<ArticlesListItem[]>([])
@@ -40,9 +39,7 @@ const Articles = () => {
       <h1>Статьи</h1>
       <div className="articles-container">{
         articles.map((article, idx) => (
-          // <div key={idx}>
-            <ArticleCell article={article}/>
-          // </div>
+          <ArticleCell article={article} key={idx}/>
         ))
       }</div>
     </>
