@@ -1,0 +1,26 @@
+.hljs {
+  .hljs-keyword {
+    color: rgb(247, 108, 171);
+  }
+
+  .hljs-title.class_, .hljs-title.function_ {
+    color: rgb(100, 217, 255);
+  }
+
+  .hljs-meta, .hljs-type {
+    color: rgb(255, 208, 252);
+  }
+
+  .hljs-operator {
+    color: white;
+  }
+
+  color: white;
+  background-color: rgb(23, 23, 27);
+
+  -webkit-box-shadow: 0 4px 20px 3px rgba(10, 10, 14, 0.2);
+  -moz-box-shadow: 0 4px 20px 3px rgba(10, 10, 14, 0.2);
+  box-shadow: 0 4px 20px 3px rgba(10, 10, 14, 0.2);
+}
+
+
