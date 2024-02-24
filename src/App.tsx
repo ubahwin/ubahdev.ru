@@ -1,5 +1,5 @@
 import React from 'react'
-import { HashRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import About from '@pages/About.tsx'
 import Articles from '@pages/Articles.tsx'
 import Header from '@components/Header.tsx'
@@ -8,7 +8,7 @@ import Article from '@components/Article.tsx'
 const App = () => {
   return (
     <>
-      <HashRouter>
+      <BrowserRouter>
         <Header/>
         <div className="wrapper">
           <div className="content-container">
@@ -30,7 +30,7 @@ const App = () => {
             </Routes>
           </div>
         </div>
-      </HashRouter>
+      </BrowserRouter>
       <footer>
         <span className="copyright">&copy; Ivan Vdovin, 2024</span>
       </footer>

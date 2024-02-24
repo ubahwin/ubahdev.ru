@@ -16,7 +16,6 @@ module.exports = {
   },
   rules: {
     'array-bracket-spacing': 'error',
-    'arrow-body-style': 'error',
     'arrow-spacing': 'error',
     'block-scoped-var': 'error',
     'comma-dangle': 'error',
