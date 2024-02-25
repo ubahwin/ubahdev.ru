@@ -7,12 +7,10 @@ header {
 
   margin: 10px 0;
 
-  top: 0;
-  left: 0;
   width: 100%;
   z-index: 9999;
 
-  height: $headerHeight;
+  min-height: $headerHeight;
 
   a {
     text-decoration: none;

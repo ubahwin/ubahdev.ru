@@ -16,7 +16,7 @@ const Article = () => {
   const marked = new Marked(
     markedHighlight({
       langPrefix: 'hljs language-',
-      highlight(code, lang, info) {
+      highlight(code, lang) {
         const language = highlight.getLanguage(lang) ? lang : 'plaintext'
         return highlight.highlight(code, { language }).value
       }
