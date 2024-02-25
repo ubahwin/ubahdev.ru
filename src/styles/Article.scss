@@ -26,8 +26,8 @@ article {
   a, p, li {
     font-size: 18px;
     font-weight: 300;
-    text-align: justify;
     line-height: 1.5;
+    word-break: break-word;
   }
 
   strong {
