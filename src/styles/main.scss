@@ -23,6 +23,11 @@ body {
   background-size: cover;
 }
 
+img[src$=".gif"] {
+  height: 500px;
+  width: auto;
+}
+
 .subtitle {
   font-size: 18px;
   font-weight: 500;
