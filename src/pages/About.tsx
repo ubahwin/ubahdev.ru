@@ -24,7 +24,7 @@ const About = () => {
 
   return (
     <>
-      <h1>Иван Вдовин</h1>
+      <h1>Ivan Vdovin</h1>
       <div className="about-container-separator">
         <div className="about-container-text">
           <p>
