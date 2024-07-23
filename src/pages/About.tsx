@@ -5,17 +5,35 @@ import tgLogo from '@assets/logo/telegram.svg'
 import ghLogo from '@assets/logo/github.svg'
 import IconLink from '@components/IconLink.tsx'
 
+const calculateAge = (birthDate: Date): number => {
+  const today = new Date()
+  let age = today.getFullYear() - birthDate.getFullYear()
+  const monthDifference = today.getMonth() - birthDate.getMonth()
+  const dayDifference = today.getDate() - birthDate.getDate()
+
+  if (monthDifference < 0 || (monthDifference === 0 && dayDifference < 0)) {
+    age--
+  }
+
+  return age
+}
+
 const About = () => {
+  const birthDate = new Date(2003, 2, 16)
+  const age = calculateAge(birthDate)
+
   return (
     <>
-      <h1>Ivan Vdovin</h1>
+      <h1>Иван Вдовин</h1>
       <div className="about-container-separator">
         <div className="about-container-text">
           <p>
-            Enthusiast iOS developer from St. Petersburg, 21 years old. I love SwiftUI and reactive approaches in application development.
+            Software engineer from St. Petersburg, {age} years old. I am engaged iOS and Web development, I love
+            reactive approaches in application development.
           </p>
           <p>
-            I am studying in the third year of Information Security at the Admiral Makarov State University of Maritime and Inland Shipping.
+            I am studying in the fourth year of Information Security at the Admiral Makarov State University of Maritime
+            and Inland Shipping.
           </p>
         </div>
         <div className="about-container-photo">
