@@ -1,20 +1,8 @@
 import path from 'path'
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import {PreRenderedAsset} from 'rollup'
 
 export default defineConfig({
-  build: {
-    target: 'esnext',
-    minify: 'terser',
-    rollupOptions: {
-      output: {
-        assetFileNames: (chunkInfo: PreRenderedAsset) => {
-          return chunkInfo.name === 'favicon.png' ? chunkInfo.name : 'assets/[name]-[hash].[ext]'
-        }
-      }
-    }
-  },
   base: '',
   resolve: {
     alias: {

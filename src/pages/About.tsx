@@ -1,5 +1,6 @@
 import '@styles/About.scss'
 import photo from '@assets/green.jpg'
+import favicon from '@assets/favicon.png'
 import vkLogo from '@assets/logo/vk.svg'
 import tgLogo from '@assets/logo/telegram.svg'
 import ghLogo from '@assets/logo/github.svg'
@@ -23,30 +24,28 @@ const About = () => {
   const birthDate = new Date(2003, 2, 16)
   const age = calculateAge(birthDate)
 
-  const title = 'ubahdev'
-  const description = 'Личный сайт Ивана Вдовина'
+  const title = 'Ivan Vdovin'
+  const description = 'Личный сайт Ивана Вдовина, визитная карточка и статьи о программировании и разработке'
 
   return (
     <>
-      <Helmet>
-        <meta name="description" content={description}/>
-        <meta property="og:url" content="https://ubahdev.ru/"/>
-        <meta property="og:type" content="website"/>
-        <meta property="og:title" content={title}/>
-        <meta property="og:description" content={description}/>
-        <meta property="og:image" content={photo}/>
+      <Helmet
+        meta={[
+          {'property': 'og:title', 'content': title},
+          {'property': 'og:type', 'content': 'profile'},
+          {'property': 'og:site_name', 'content': 'ubahdev'},
+          {'property': 'og:url', 'content': 'https://ubahdev.ru/'},
+          {'property': 'og:description', 'content': description},
+          {'property': 'og:image', 'content': photo}
+        ]}
+        link={[
+          {'rel': 'icon', 'type': 'image/png', 'sizes': '32x32', 'href': favicon}
+        ]}
+    />
 
-        <meta name="twitter:card" content="summary_large_image"/>
-        <meta property="twitter:domain" content="ubahdev.ru"/>
-        <meta property="twitter:url" content="https://ubahdev.ru/"/>
-        <meta name="twitter:title" content={title}/>
-        <meta name="twitter:description" content={description}/>
-        <meta name="twitter:image" content={photo}/>
-      </Helmet>
-
-      <h1>Ivan Vdovin</h1>
-      <div className="about-container-separator">
-        <div className="about-container-text">
+  <h1>Ivan Vdovin</h1>
+  <div className="about-container-separator">
+  <div className="about-container-text">
           <p>
             Software engineer from St. Petersburg, {age} years old. I am engaged iOS and Web development, I love
             reactive approaches in application development.
