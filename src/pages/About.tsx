@@ -38,14 +38,11 @@ const About = () => {
           {'property': 'og:description', 'content': description},
           {'property': 'og:image', 'content': photo}
         ]}
-        link={[
-          {'rel': 'icon', 'type': 'image/png', 'sizes': '32x32', 'href': favicon}
-        ]}
-    />
+      />
 
-  <h1>Ivan Vdovin</h1>
-  <div className="about-container-separator">
-  <div className="about-container-text">
+      <h1>Ivan Vdovin</h1>
+      <div className="about-container-separator">
+        <div className="about-container-text">
           <p>
             Software engineer from St. Petersburg, {age} years old. I am engaged iOS and Web development, I love
             reactive approaches in application development.
