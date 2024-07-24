@@ -7,6 +7,7 @@ import vkLogo from '@assets/logo/vk.svg'
 import tgLogo from '@assets/logo/telegram.svg'
 import ghLogo from '@assets/logo/github.svg'
 import IconLink from '@components/IconLink.tsx'
+import { Helmet } from 'react-helmet-async'
 
 const calculateAge = (birthDate: Date): number => {
   const today = new Date()
@@ -27,6 +28,11 @@ const About = () => {
 
   return (
     <>
+      <Helmet>
+        <meta property="og:title" content={'Сайт Ивана Вдовина'}/>
+        <meta property="og:image" content={photo2}/>
+      </Helmet>
+
       <h1>Ivan Vdovin</h1>
       <div className="about-container-separator">
         <div className="about-container-text">
