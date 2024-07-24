@@ -29,26 +29,19 @@ const About = () => {
   return (
     <>
       <Helmet>
-        <meta property="og:site_name" content={title}/>
-
-        <meta property="og:title" content={title}/>
-
-        <meta name="twitter:title" content={title}/>
-        <meta name="aiturec:title" content={title}/>
-
         <meta name="description" content={description}/>
-        <meta property="og:description" content={description}/>
-        <meta name="twitter:description" content={description}/>
-        <meta property="aiturec:description" content={description}/>
-        <meta property="og:locale" content="ru_RU"/>
-        <meta property="og:type" content="profile"/>
-
-        <meta property="aiturec:image" content={photo}/>
-        <meta property="og:image" content={photo}/>
-        <meta name="twitter:image" content={photo}/>
-        <meta property="vk:image" content={photo}/>
-
         <meta property="og:url" content="https://ubahdev.ru/"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content={title}/>
+        <meta property="og:description" content={description}/>
+        <meta property="og:image" content={photo}/>
+
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta property="twitter:domain" content="ubahdev.ru"/>
+        <meta property="twitter:url" content="https://ubahdev.ru/"/>
+        <meta name="twitter:title" content={title}/>
+        <meta name="twitter:description" content={description}/>
+        <meta name="twitter:image" content={photo}/>
       </Helmet>
 
       <h1>Ivan Vdovin</h1>
