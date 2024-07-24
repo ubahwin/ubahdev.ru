@@ -1,8 +1,5 @@
 import '@styles/About.scss'
-// import photo1 from '@assets/me.jpg'
-import photo2 from '@assets/green.jpg'
-// import photo3 from '@assets/peace.jpg'
-
+import photo from '@assets/green.jpg'
 import vkLogo from '@assets/logo/vk.svg'
 import tgLogo from '@assets/logo/telegram.svg'
 import ghLogo from '@assets/logo/github.svg'
@@ -26,11 +23,31 @@ const About = () => {
   const birthDate = new Date(2003, 2, 16)
   const age = calculateAge(birthDate)
 
+  const title = 'ubahdev'
+  const description = 'Личный сайт Ивана Вдовина'
+
   return (
     <>
       <Helmet>
-        <meta property="og:title" content={'Сайт Ивана Вдовина'}/>
-        <meta property="og:image" content={photo2}/>
+        <meta property="og:site_name" content={title}/>
+
+        <meta property="og:title" content={title}/>
+
+        <meta name="twitter:title" content={title}/>
+        <meta name="aiturec:title" content={title}/>
+
+        <meta name="description" content={description}/>
+        <meta itemprop="description" content={description}/>
+        <meta property="og:description" content={description}/>
+        <meta name="twitter:description" content={description}/>
+        <meta property="aiturec:description" content={description}/>
+        <meta property="og:locale" content="ru_RU"/>
+        <meta property="og:type" content="profile"/>
+
+        <meta property="aiturec:image" content={photo}/>
+        <meta property='og:image' content={photo}/>
+        <meta name="twitter:image" content={photo}/>
+        <meta property="vk:image" content={photo}/>
       </Helmet>
 
       <h1>Ivan Vdovin</h1>
@@ -46,7 +63,7 @@ const About = () => {
           </p>
         </div>
         <div className="about-container-photo">
-          <img src={photo2} alt="Photo" className="about-photo"/>
+          <img src={photo} alt="Photo" className="about-photo"/>
           <div className="links">
             <IconLink iconUrl={ghLogo} alt="GitHub" href="https://github.com/ubahwin"/>
             <IconLink iconUrl={tgLogo} alt="Telegram" href="https://t.me/ubahwin"/>
