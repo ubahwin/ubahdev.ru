@@ -1,7 +1,8 @@
 import {Link} from 'react-router-dom'
-import React, {BaseSyntheticEvent, EventHandler, SyntheticEvent} from 'react'
+import React, {BaseSyntheticEvent, EventHandler, SyntheticEvent, useEffect} from 'react'
 import '@styles/ArticleCell.scss'
 import fallbackThumbnail from '@assets/fallback-thumbnail.jpg?url'
+import articles from '@pages/Articles.tsx'
 
 const ArticleCell = (props: { article: ArticlesListItem }) => {
   return (

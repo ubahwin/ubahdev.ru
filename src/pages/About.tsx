@@ -1,5 +1,8 @@
 import '@styles/About.scss'
-import photo from '@assets/me.jpg'
+// import photo1 from '@assets/me.jpg'
+import photo2 from '@assets/green.jpg'
+// import photo3 from '@assets/peace.jpg'
+
 import vkLogo from '@assets/logo/vk.svg'
 import tgLogo from '@assets/logo/telegram.svg'
 import ghLogo from '@assets/logo/github.svg'
@@ -37,7 +40,7 @@ const About = () => {
           </p>
         </div>
         <div className="about-container-photo">
-          <img src={photo} alt="Photo" className="about-photo"/>
+          <img src={photo2} alt="Photo" className="about-photo"/>
           <div className="links">
             <IconLink iconUrl={ghLogo} alt="GitHub" href="https://github.com/ubahwin"/>
             <IconLink iconUrl={tgLogo} alt="Telegram" href="https://t.me/ubahwin"/>
