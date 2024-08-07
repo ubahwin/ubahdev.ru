@@ -4,18 +4,10 @@ import About from '@pages/About.tsx'
 import Articles from '@pages/Articles.tsx'
 import Header from '@components/Header.tsx'
 import Article from '@components/Article.tsx'
-import favicon from '@assets/favicon.png'
-import { Helmet } from 'react-helmet-async'
 
 const App = () => {
   return (
     <>
-      <Helmet
-        link={[
-          {'rel': 'icon', 'type': 'image/png', 'sizes': '32x32', 'href': favicon}
-        ]}
-      />
-
       <BrowserRouter>
         <Header/>
         <div className="wrapper">
