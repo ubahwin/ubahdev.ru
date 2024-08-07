@@ -2,6 +2,7 @@ import path from 'path'
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import replaceOgpMeta from './vite-plugins/replaceOgpMeta'
+import {robots} from 'vite-plugin-robots'
 
 export default defineConfig({
   base: '',
@@ -20,6 +21,9 @@ export default defineConfig({
       title: 'Ivan Vdovin',
       description: 'Личный сайт Ивана Вдовина, визитная карточка и статьи о программировании и разработке',
       imageName: 'green'
+    }),
+    robots({
+
     })
   ]
 })
