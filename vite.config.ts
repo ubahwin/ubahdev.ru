@@ -1,6 +1,7 @@
 import path from 'path'
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import replaceOgpMeta from './vite-plugins/replaceOgpMeta'
 
 export default defineConfig({
   base: '',
@@ -13,5 +14,12 @@ export default defineConfig({
       '@pages': path.resolve(__dirname, 'src/pages')
     }
   },
-  plugins: [react()]
+  plugins: [
+    react(),
+    replaceOgpMeta({
+      title: 'Ivan Vdovin',
+      description: 'Личный сайт Ивана Вдовина, визитная карточка и статьи о программировании и разработке',
+      imageName: 'green'
+    })
+  ]
 })
