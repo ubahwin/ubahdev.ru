@@ -48,6 +48,7 @@ img[src$=".gif"] {
 
 .content-container {
   width: 60%;
+  max-width: 800px;
 
   display: flex;
   flex-direction: column;
